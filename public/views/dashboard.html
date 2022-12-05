@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recipe Dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="/login">
+              <span class="nav-item">Login</span>
+            </a>
+          </li>
+          <li>
+            <a href="dash">
+              <i class="fas fa-bars"></i>
+              <span class="nav-item">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="/logout" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main">
+        <div class="main-top">
+          <h1>{{username}}</h1>
+          <i class="fas fa-user-cog"></i>
+        </div>
+        <div class="users">
+          <div class="card">
+            <img
+              src="https://th.bing.com/th/id/R.fe1b68786c60b264f323988035789c7d?rik=6FrkZ%2bCjghOVIg&pid=ImgRaw&r=0"
+            />
+            <h4 class="Name">{{username}}</h4>
+
+            <div class="per"></div>
+            <button>Profile</button>
+          </div>
+        </div>
+
+        <section class="List-items">
+
+            <h1>Saved Items</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Num</th>
+                  <th>Recipe Name</th>
+                  <th>Fat</th>
+                  <th>Sodium</th>
+                  <th>Protein</th>
+                  <th>Calories</th>
+                  <th>Link To Recipe</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for recipe in recipeInfo %}
+                <tr>
+                  <td>01</td>
+                  <td>{{recipe.recipe_name}}</td>
+                  <td>{{recipe.fat}}g</td>
+                  <td>{{recipe.sodium}}g</td>
+                  <td>{{recipe.protien}}g</td>
+                  <td>{{recipe.calories}}</td>
+                  <td>
+                    <a href="#">
+                      <button>View</button>
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

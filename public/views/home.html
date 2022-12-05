@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" a href="./css/home.css" />
+    <link rel="stylesheet" href="./css/template.css">
+  </head>
+  <body class="body">
+    <section id="hero">
+      <div class="container">
+        <div class="info">
+          <h1>Nutrition Friendly</h1>
+        </div>
+      </div>
+    </section>
+    <form class="example">
+      <input type="text" placeholder="Search.." name="search" class="userInput" />
+      <button type="submit" class="searchBtn"><i class=" fa fa-search"></i></button>
+    </form>
+    <nav>
+      <ul>
+        <li>
+          <a href="/login">
+            <span class="nav-item">Login</span>
+          </a>
+        </li>
+        <li>
+          <a href="/dash">
+            <i class="fas fa-bars"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i class="fas fa-home"></i>
+            <span class="nav-item">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="/logout" class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="nav-item">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section id="Searched Items"></section>
+    <div class='recipe-card template'>
+        <div class="url" style=" background-size:cover; height: 150px">
+        </div>
+        <div class="recipe-card__body">
+            <h1 class="recipe-card__heading">Oatmeal Cookies</h1>
+            <h2 class="recipe-card__subhead"></h2>
+            <ul class="recipe-card__nav">
+                <li>
+                    <h3 class="active">Nutrition</h3>
+                </li>
+                <li>
+                    <!-- <h3>Method</h3> -->
+                </li>
+            </ul>
+            <ul class="recipe-card__ingredients">
+                <li class="fat"> Fat</li>
+                <li class="cal"> Calories</li>
+                <li class="bro"> Brotein</li>
+                <li class="sodium"> Sodium</li>
+            </ul>
+        </div>
+    </div>
+    <div class="recipe-container">
+
+    </div>
+  </body>
+  <script type="module" src="./scripts/manageData.js"></script>
+  <script type="module" src='./scripts/displayRecipes.js'> </script>
+</html>
+
+<!-- more of a login page where you login (user save) that user can only access  -->
+<!-- sign up or sign in page for users -->
+
+<!-- Picture, NAME OF RECIPE,SUgar,CALORIES,PROTIEN,Chlosteral,Sodium -->
+<!-- Image size attribute medium 200px by 200px-->
+
+<!-- create user page for saved items to show -->

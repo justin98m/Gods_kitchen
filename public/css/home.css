@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap");
+
+/* importing fonts */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(226, 226, 226);
+}
+#hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
+    url("https://cdn.winsightmedia.com/platform/files/public/2019-03/background/national-nutrition-month-shutterstock-1800_1552318666.jpg?7kJJtVVbNvmbSqa5sKX0_FXTOuHF8d4O")
+      no-repeat center bottom / cover;
+  color: whitesmoke;
+}
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /*   text-align: center; */
+}
+#hero .info h1 {
+  font-size: 5rem;
+  /* text-transform: uppercase; */
+  margin-bottom: 1rem;
+  margin-left: 100%;
+  padding: 120px;
+}
+#hero .info p {
+  font-size: 1.2rem;
+  max-width: 50%;
+  margin-left: 80%;
+}
+
+/* search bar */
+
+/* Search*/
+
+/* nav */
+
+nav {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  /* width: 280px; */
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  transition: 1s;
+}
+nav:hover {
+  width: 280px;
+  transition: 1s;
+}
+a {
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 10px;
+}
+nav .fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover {
+  background: #ffffff;
+}
+a:hover i {
+  color: #ff4b2b;
+  transition: 0.5s;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 30%;
+  background: #f1f1f1;
+  margin-left: 30%;
+}
+
+form.example button {
+  width: 5%;
+  padding: 10px;
+  background: #ff4b2b;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #ff4b2b;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.line {
+  width: 150px;
+  height: 3px;
+  background: red;
+  margin: 30px auto;
+}
+
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 10px;
+  }
+}
